@@ -7,55 +7,56 @@
         <h1 align="center">Create a Rediffmail account</h1>
         <div class="container">
             <form [formGroup]="userFormGroup" >
-              <table align="center">
+              
                 <div class="form-group">
-                  <tr>
-                    <td><label for="exampleInputEmail1">Full Name</label></td>
-                    <td><strong>:</strong></td>
-                    <td> <input type="text" class="form-control" formControlName="fullName" ></td>
-                  </tr>         
+                  
+                    <label for="exampleInputEmail1">Full Name</label>
+                    <strong>:</strong>
+                     <input type="text" class="form-control" formControlName="fullName" >
+                           
                 </div>
                 <div class="form-group">
-                  <tr>
-                    <td></td>
-                    <td></td>
-                    <td><button (click)="submit()" class="btn btn-primary">Check Availability</button></td>
-                  </tr>         
+                  
+                    <label for="exampleInputEmail1">Choose a Rediffmail Id</label>
+                    <strong>:</strong>
+                     <input type="text" class="form-control" formControlName="fullName" >@rediffmail.com
+                           
                 </div>
                 <div class="form-group">
-                    <tr>
-                    <td><label for="exampleInputEmail1">Password</label></td>
-                    <td><strong>:</strong></td>
-                    <td> <input type="text" class="form-control" formControlName="password"></td>
-                    </tr>
+                  
+                    
+                    
+                    <button (click)="submit()" class="button4">Check Availability</button>
+                           
                 </div>
                 <div class="form-group">
-                    <tr>
-                    <td><label for="exampleInputEmail1"> Retype Password</label></td>
-                    <td><strong>:</strong></td>
-                    <td><input type="text" class="form-control" formControlName=" retypePassword"> </td>
-                    </tr>         
+                    
+                    <label for="exampleInputEmail1">Password</label>
+                    <strong>:</strong>
+                     <input type="text" class="form-control" formControlName="password">
+                    
                 </div>
                 <div class="form-group">
-                    <tr>
-                    <td><label for="exampleInputEmail1">Alternate Email Address</label></td>
-                    <td><strong>:</strong></td>
-                    <td><input type="password" class="form-control" formControlName="alternateMail"></td>
-                    </tr>         
+                    
+                    <label for="exampleInputEmail1"> Retype Password</label>
+                    <strong>:</strong>
+                    <input type="text" class="form-control" formControlName="retypePassword"> 
+                             
                 </div>
                 <div class="form-group">
-                    <tr>
-                    <td></td>
-                    <td></td>
-                    <td><input type="checkbox" class="form-control" formControlName="noAlternateId">Click if you don't have an alternate ID</td>
-                    </tr>         
+                    
+                    <label for="exampleInputEmail1">Alternate Email Address</label>
+                    <strong>:</strong>
+                    <input type="password" class="form-control" formControlName="alternateMail">
+                             
                 </div>
+                
                 <div class="form-group">
-                    <tr>
-                    <td><label for="exampleInputEmail1">Date of Birth</label>
-                    <td><strong>:</strong></td>
-                    <td>
-                    <select name="Day" id="day" class="form-control" formControlName="day">
+                    
+                    <label for="exampleInputEmail1">Date of Birth</label>
+                    <strong>:</strong>
+                    
+                    <select name="Day" id="day" class="dropdown" formControlName="day" >
                       <option>Day</option>
                       <option>01</option>
                       <option>02</option>
@@ -89,7 +90,7 @@
                       <option>30</option>
                       <option>31</option>
                     </select>
-                    <select name="Month" id="month" class="form-control" formControlName="month">
+                    <select name="Month" id="month" class="dropdown" formControlName="month">
                         <option>Month</option>
                         <option>JAN</option>
                         <option>FEB</option>
@@ -104,7 +105,7 @@
                         <option>NOV</option>
                         <option>DEC</option>
                       </select>
-                    <select name="Year" id="year" class="form-control" formControlName="year">
+                    <select name="Year" id="year" class="dropdown" formControlName="year">
                         <option>Year</option>
                         <option>2020</option>
                         <option>2019</option>
@@ -128,22 +129,22 @@
                         <option>2001</option>
                         <option>2000</option>                   
                       </select>
-                      </td>
-                      </tr>         
+                      
+                               
+                </div>
+                <div data-role="main" class="content">
+                    
+                    <label for="exampleInputEmail1">Gender</label>
+                    <strong>:</strong>
+                     <input type="radio"  name="gender" checked >Male
+                      <input type="radio" name="gender" >Female
+                             
                 </div>
                 <div class="form-group">
-                    <tr>
-                    <td><label for="exampleInputEmail1">Gender</label></td>
-                    <td><strong>:</strong></td>
-                    <td> <input type="radio" class="form-control" formControlName="male">Male</td>
-                     <td> <input type="radio" class="form-control" formControlName="feMale">Female</td>
-                    </tr>         
-                </div>
-                <div class="form-group">
-                    <tr>
-                    <td><label for="exampleInputEmail1">I Live in             Country</label>
-                    <td><strong>:</strong></td>
-                    <td><select name="country" class="form-control" formControlName="country">
+                    
+                    <label for="exampleInputEmail1">I Live in             Country</label>
+                    <strong>:</strong>
+                    <select name="country" class="dropdown" formControlName="country">
                                 <option value="India">India</option>
                                 <option value="">Country...</option>
                                 <option value="Afganistan">Afghanistan</option>
@@ -394,13 +395,13 @@
                                 <option value="Zambia">Zambia</option>
                                 <option value="Zimbabwe">Zimbabwe</option>
                                 </select>
-                                </td>
-                                </tr>         
+                                
+                                         
                 </div>
-                <button (click)="submit()" class="btn btn-primary">Submit</button>
+                <button (click)="submit()" class="button1">Create my account>></button>
             
           
-            </table>
+            
          </form>
      </div>
   </body>

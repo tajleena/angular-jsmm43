@@ -20,15 +20,17 @@ export class AppComponent implements OnInit  {
     this.userFormGroup=this.formBuilder.group
     (
       {
-        firstName:['',Validators.required],
-        lastName:'',
-        email:'',
-        password:'',
-        mobileNo:'',
-        day:'',
-        month:'',
-        year:'',
-        gender:''
+        fullName:['',Validators.required],
+        password:['',Validators.required],
+        retypePassword:['',Validators.required],
+        alternateMail:['',Validators.required],
+        day:['',Validators.required],
+        month:['',Validators.required],
+        year:['',Validators.required],
+        male:['',Validators.required],
+        feMale:['',Validators.required],
+        country:['',Validators.required],
+        noAlternateId:['',Validators.required],
 
       }
     )

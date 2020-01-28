@@ -33,7 +33,7 @@ export class AppComponent implements OnInit  {
         noAlternateId:['',Validators.required],
 
       }
-    )
+    );
   }
   submit()
   {
